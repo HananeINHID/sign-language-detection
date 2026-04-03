@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (never commit raw videos or large .npy files)
+data/raw/
+data/processed/
+*.mp4
+*.avi
+*.mov
+*.npy
+*.npz
+
+# Exceptions: keep sample data
+!data/samples/.gitkeep
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Google Colab / Drive
+*.json
+!labels.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
