@@ -1,42 +1,62 @@
-# 📐 Data Specifications — Livraison Membre 2
+# 📐 Data Specifications — Livraison Finale
 
 > Document de référence pour l'interface entre le pipeline data (Membre 1) et le modèle IA (Membre 2).  
 > **Ne pas modifier sans concertation.**
 
 ---
 
-## Format des fichiers livrés
+## 📊 Résumé du Dataset
 
-| Fichier | Contenu | Shape |
-|---------|---------|-------|
-| `X_train.npy` | Features d'entraînement | `(n, 30, 258)` |
-| `X_val.npy` | Features de validation | `(n, 30, 258)` |
-| `X_test.npy` | Features de test | `(n, 30, 258)` |
-| `y_train.npy` | Labels entiers train | `(n,)` |
-| `y_val.npy` | Labels entiers val | `(n,)` |
-| `y_test.npy` | Labels entiers test | `(n,)` |
-| `labels.json` | Mapping index → classe | — |
+- **Total vidéos :** 45 (moyenne de 9 vidéos/classe)
+- **Classes :** 5 (`eat`, `drink`, `water`, `sleep`, `medicine`)
+- **Shape d'entrée :** `(64, 1662)` 
+- **Split :** 70% train (31 vidéos) / 15% val (7 vidéos) / 15% test (7 vidéos)
 
 ---
 
-## Détail des 258 features par frame
+## ⚠️ Note importante pour Membre 2 (Modélisation)
+
+Le volume de données actuel est très limité. Voici les recommandations techniques pour compenser ce faible nombre d'échantillons lors de l'entraînement :
+- **Data Augmentation fortement recommandée :** Appliquer des transformations sur les coordonnées (flip horizontal, ajout de bruit gaussien temporel ou spatial).
+- **Architecture :** Réduire drastiquement la complexité du modèle pour éviter un surapprentissage (overfitting) immédiat. Privilégier des réseaux légers.
+- **Attentes :** Ne pas s'attendre à une *accuracy* supérieure à 80% en validation/test sur ce volume de données brut.
+
+---
+
+## Format des fichiers livrés (Vérification Finale OK ✅)
+
+| Fichier | Contenu | Shape |
+|---------|---------|-------|
+| `X_train.npy` | Features d'entraînement | `(31, 64, 1662)` |
+| `X_val.npy` | Features de validation | `(7, 64, 1662)` |
+| `X_test.npy` | Features de test | `(7, 64, 1662)` |
+| `y_train.npy` | Labels entiers train | `(31,)` |
+| `y_val.npy` | Labels entiers val | `(7,)` |
+| `y_test.npy` | Labels entiers test | `(7,)` |
+| `labels.json` | Mapping index → classe | — |
+
+*Note : Aucune valeur `NaN` n'est présente dans les jeux de données.*
+
+---
+
+## Détail des 1662 features par frame
 
 | Partie du corps | Landmarks | Valeurs/landmark | Total |
 |-----------------|-----------|-----------------|-------|
 | Pose (corps) | 33 | 4 (x, y, z, visibility) | 132 |
+| Face (visage) | 468 | 3 (x, y, z) | 1404 |
 | Main gauche | 21 | 3 (x, y, z) | 63 |
 | Main droite | 21 | 3 (x, y, z) | 63 |
-| **Total** | | | **258** |
+| **Total** | | | **1662** |
 
 ---
 
 ## Conventions
 
-- Coordonnées normalisées entre 0 et 1 (relatives à la taille de l'image)
-- Valeurs manquantes (main non détectée) = vecteur de **zéros**
-- Séquences standardisées à **30 frames** par interpolation
-- Split : **70% train / 15% val / 15% test** (stratifié par classe)
-- Encodage des labels : **entiers** (0 à 19), voir `labels.json`
+- Coordonnées normalisées entre 0 et 1 (relatives à la taille de l'image).
+- Valeurs manquantes (ex: main non détectée ou hors cadre) = vecteur de **zéros**.
+- Séquences standardisées à **64 frames** par interpolation ou padding.
+- Encodage des labels : **entiers** (0 à 4), voir `labels.json`.
 
 ---
 
@@ -44,19 +64,16 @@
 
 ```json
 {
-  "eat": 0, "drink": 1, "water": 2, "sleep": 3, "medicine": 4,
-  "hello": 5, "please": 6, "thank_you": 7, "sorry": 8, "goodbye": 9,
-  "yes": 10, "no": 11, "help": 12, "who": 13, "what": 14,
-  "home": 15, "school": 16, "mother": 17, "father": 18, "friend": 19
-}
-```
-
----
-
+  "eat": 0, 
+  "drink": 1, 
+  "water": 2, 
+  "sleep": 3, 
+  "medicine": 4
+}                                                                                                    
 ## Chemin Google Drive
 
 ```
-Drive/SignLanguage_Project/02_Dataset_Final/
+Drive/MyDrive/Projets/sign-language-detection/02_Dataset_Final/
 ├── X_train.npy
 ├── X_val.npy
 ├── X_test.npy
