@@ -1,0 +1,46 @@
+video_path,label,status,note
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/eat/69307.mp4,eat,OK,ATTENTION : mains non détectées sur 46% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/eat/18329.mp4,eat,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/eat/65601.mp4,eat,OK,ATTENTION : mains non détectées sur 59% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/eat/18323.mp4,eat,OK,ATTENTION : mains non détectées sur 40% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/eat/18335.mp4,eat,OK,ATTENTION : mains non détectées sur 48% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/eat/18324.mp4,eat,OK,ATTENTION : mains non détectées sur 70% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/eat/18325.mp4,eat,OK,ATTENTION : mains non détectées sur 58% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/69302.mp4,drink,OK,ATTENTION : mains non détectées sur 29% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/65539.mp4,drink,OK,ATTENTION : mains non détectées sur 52% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17710.mp4,drink,OK,ATTENTION : mains non détectées sur 57% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17733.mp4,drink,OK,ATTENTION : mains non détectées sur 53% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/65540.mp4,drink,OK,ATTENTION : mains non détectées sur 46% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17734.mp4,drink,OK,ATTENTION : mains non détectées sur 46% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17711.mp4,drink,OK,ATTENTION : mains non détectées sur 56% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17712.mp4,drink,OK,ATTENTION : mains non détectées sur 28% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17713.mp4,drink,OK,ATTENTION : mains non détectées sur 54% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17709.mp4,drink,OK,ATTENTION : mains non détectées sur 60% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17720.mp4,drink,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17721.mp4,drink,OK,ATTENTION : mains non détectées sur 29% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17722.mp4,drink,OK,ATTENTION : mains non détectées sur 29% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17723.mp4,drink,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/drink/17724.mp4,drink,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/62505.mp4,water,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/62506.mp4,water,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/66752.mp4,water,OK,ATTENTION : mains non détectées sur 43% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/62499.mp4,water,OK,ATTENTION : mains non détectées sur 45% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/62510.mp4,water,OK,ATTENTION : mains non détectées sur 64% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/62500.mp4,water,OK,ATTENTION : mains non détectées sur 48% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/62501.mp4,water,OK,ATTENTION : mains non détectées sur 59% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/62502.mp4,water,OK,ATTENTION : mains non détectées sur 39% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/water/62503.mp4,water,OK,ATTENTION : mains non détectées sur 33% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/sleep/69479.mp4,sleep,OK,ATTENTION : mains non détectées sur 29% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/sleep/52324.mp4,sleep,OK,ATTENTION : mains non détectées sur 72% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/sleep/52316.mp4,sleep,OK,ATTENTION : mains non détectées sur 40% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/sleep/52317.mp4,sleep,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/sleep/52318.mp4,sleep,OK,ATTENTION : mains non détectées sur 47% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/sleep/52320.mp4,sleep,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/medicine/66111.mp4,medicine,OK,ATTENTION : mains non détectées sur 38% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/medicine/35454.mp4,medicine,OK,ATTENTION : mains non détectées sur 47% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/medicine/35455.mp4,medicine,OK,ATTENTION : mains non détectées sur 24% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/medicine/35456.mp4,medicine,OK,ATTENTION : mains non détectées sur 59% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/medicine/35458.mp4,medicine,OK,
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/medicine/35452.mp4,medicine,OK,ATTENTION : mains non détectées sur 59% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/medicine/35467.mp4,medicine,OK,ATTENTION : mains non détectées sur 61% des frames
+/content/drive/MyDrive/Projets/sign-language-detection/data/raw/medicine/35453.mp4,medicine,OK,ATTENTION : mains non détectées sur 47% des frames

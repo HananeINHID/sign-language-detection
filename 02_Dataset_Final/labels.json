@@ -1,0 +1,7 @@
+{
+  "eat": 0,
+  "drink": 1,
+  "water": 2,
+  "sleep": 3,
+  "medicine": 4
+}
