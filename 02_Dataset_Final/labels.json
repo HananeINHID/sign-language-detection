@@ -3,5 +3,19 @@
   "drink": 1,
   "water": 2,
   "sleep": 3,
-  "medicine": 4
+  "medicine": 4,
+  "hello": 5,
+  "please": 6,
+  "sorry": 7,
+  "goodbye": 8,
+  "yes": 9,
+  "no": 10,
+  "help": 11,
+  "who": 12,
+  "what": 13,
+  "home": 14,
+  "school": 15,
+  "mother": 16,
+  "father": 17,
+  "friend": 18
 }
